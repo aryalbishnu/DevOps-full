@@ -1,8 +1,8 @@
 name: aryal
 
 on:
-  push:
-    branches: [ main ]
+  schedule:
+    - cron: "0 0 * * *" 
 
 jobs:
   demo:
@@ -10,4 +10,4 @@ jobs:
 
     steps:
       - name: Greetings
-        run: echo "hello from aryal devops"
+        run: echo "schedule work flow from aryal devops"
